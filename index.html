@@ -1,193 +1,109 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nikhil Kant | Data Science & ML Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/smooth-scroll"></script>
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
-            background: url('https://via.placeholder.com/1920x1080') no-repeat center center fixed;
-            background-size: cover;
-            color: #fff;
-        }
+<!DOCTYPE HTML>
+<!--
+	Customized Portfolio Website
+	Inspired by "Dimension by HTML5 UP"
+-->
+<html>
+	<head>
+		<title>Nikhil Kant | Data Science Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
 
-        header {
-            text-align: center;
-            padding: 5rem 2rem;
-        }
+		<!-- Wrapper -->
+			<div id="wrapper">
 
-        header img {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-            border: 4px solid #fff;
-            margin-bottom: 1rem;
-        }
+				<!-- Header -->
+					<header id="header">
+						<div>
+							<img src="profile.jpg" alt="Nikhil Kant" width="200" height="200">
+						</div>
+						<div class="content">
+							<div class="inner">
+								<h1>Nikhil Kant</h1>
+								<p>Data Science & Machine Learning Enthusiast</p>
+								<p>M.S. Information Systems | University of Maryland</p>
+							</div>
+						</div>
+						<nav>
+							<ul>
+								<li><a href="#about">About Me</a></li>
+								<li><a href="#projects">Projects</a></li>
+								<li><a href="#research">Research</a></li>
+								<li><a href="#resume">Resume</a></li>
+								<li><a href="#contact">Contact</a></li>
+							</ul>
+						</nav>
+					</header>
 
-        header h1 {
-            font-size: 2.5rem;
-            margin: 0.5rem 0;
-        }
+				<!-- Main -->
+					<div id="main">
 
-        header p {
-            font-size: 1.2rem;
-            margin: 0;
-            font-weight: 300;
-        }
+						<!-- About Me -->
+							<article id="about">
+								<h2 class="major">About Me</h2>
+								<p>Hello! I'm Nikhil Kant, a Data Scientist and Machine Learning Enthusiast with a strong passion for solving complex problems through technology. With professional experience in predictive analytics, process optimization, and data-driven decision-making, I specialize in crafting solutions that empower businesses and systems.</p>
+								<p>Currently pursuing my M.S. in Information Systems at the University of Maryland, I am honing my skills in advanced analytics, machine learning, and business intelligence. My mission is to bridge the gap between data and actionable insights to drive growth and innovation.</p>
+							</article>
 
-        nav {
-            display: flex;
-            justify-content: center;
-            gap: 1.5rem;
-            margin-top: 2rem;
-        }
+						<!-- Projects -->
+							<article id="projects">
+								<h2 class="major">Projects</h2>
+								<ul>
+									<li><strong>Predictive Inventory Model:</strong> Optimized inventory worth $18M and reduced lead times by 67% using advanced analytics.</li>
+									<li><strong>Django Web App:</strong> Developed a full-stack application to streamline inventory and production planning.</li>
+									<li><strong>Brain Tumor Detection:</strong> Achieved 93% accuracy with a deep learning model published in an international journal.</li>
+								</ul>
+							</article>
 
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 1.1rem;
-            font-weight: bold;
-            padding: 0.5rem 1rem;
-            border: 2px solid #fff;
-            border-radius: 25px;
-            transition: all 0.3s ease-in-out;
-        }
+						<!-- Research -->
+							<article id="research">
+								<h2 class="major">Research</h2>
+								<p>My research focuses on leveraging Machine Learning and Artificial Intelligence to address real-world challenges in areas such as:</p>
+								<ul>
+									<li>Deep Learning in Healthcare</li>
+									<li>Supply Chain Optimization</li>
+									<li>Data-Driven Decision Making</li>
+								</ul>
+							</article>
 
-        nav a:hover {
-            background-color: #fff;
-            color: #333;
-        }
+						<!-- Resume -->
+							<article id="resume">
+								<h2 class="major">Resume</h2>
+								<p><a href="https://drive.google.com/drive/folders/1okNjob6sAJKSLENzsHD63jILY3QV1uXa?usp=share_link" target="_blank">View My Resume</a></p>
+							</article>
 
-        .modal {
-            background-color: rgba(0, 0, 0, 0.85);
-            padding: 2rem;
-            border-radius: 10px;
-            max-width: 600px;
-            margin: 5% auto;
-            color: #fff;
-        }
+						<!-- Contact -->
+							<article id="contact">
+								<h2 class="major">Contact</h2>
+								<ul>
+									<li>Email: <a href="mailto:nkant@umd.edu">nkant@umd.edu</a></li>
+									<li>LinkedIn: <a href="https://www.linkedin.com/in/nikhil-kant/" target="_blank">linkedin.com/in/nikhil-kant</a></li>
+									<li>GitHub: <a href="https://github.com/NikhilKant10" target="_blank">github.com/NikhilKant10</a></li>
+								</ul>
+							</article>
 
-        .close-btn {
-            text-align: right;
-        }
+					</div>
 
-        .close-btn button {
-            background: none;
-            border: none;
-            font-size: 1.5rem;
-            color: #fff;
-            cursor: pointer;
-        }
+				<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright">&copy; 2024 Nikhil Kant. Design inspired by <a href="https://html5up.net">HTML5 UP</a>.</p>
+					</footer>
 
-        .close-btn button:hover {
-            color: #f00;
-        }
+			</div>
 
-        footer {
-            text-align: center;
-            background: rgba(0, 0, 0, 0.8);
-            color: #fff;
-            padding: 1rem 0;
-            margin-top: 2rem;
-        }
+		<!-- BG -->
+			<div id="bg"></div>
 
-        footer a {
-            color: #00f;
-            text-decoration: none;
-        }
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
 
-        footer a:hover {
-            text-decoration: underline;
-        }
-
-    </style>
-</head>
-<body>
-    <header>
-        <img src="profile.jpg" alt="Nikhil Kant">
-        <h1>Nikhil Kant</h1>
-        <p>Data Science & Machine Learning Enthusiast</p>
-        <nav>
-            <a href="#" id="about-btn">About Me</a>
-            <a href="#" id="projects-btn">Projects</a>
-            <a href="#" id="research-btn">Research</a>
-            <a href="#" id="resume-btn">Resume</a>
-            <a href="#" id="contact-btn">Contact</a>
-        </nav>
-    </header>
-
-    <div id="modal" class="modal" style="display:none;">
-        <div class="close-btn">
-            <button onclick="closeModal()">&times;</button>
-        </div>
-        <div id="modal-content"></div>
-    </div>
-
-    <footer>
-        <p>&copy; 2024 Nikhil Kant. All Rights Reserved. | <a href="#">Back to Top</a></p>
-    </footer>
-
-    <script>
-        function closeModal() {
-            document.getElementById('modal').style.display = 'none';
-        }
-
-        document.getElementById('about-btn').addEventListener('click', function() {
-            document.getElementById('modal-content').innerHTML = `
-                <h2>About Me</h2>
-                <p>Hi, I'm Nikhil Kant, a Data Science and ML enthusiast with a passion for crafting impactful, data-driven solutions. With experience in predictive analytics, process optimization, and machine learning, I strive to empower businesses and systems to perform at their best.</p>
-            `;
-            document.getElementById('modal').style.display = 'block';
-        });
-
-        document.getElementById('projects-btn').addEventListener('click', function() {
-            document.getElementById('modal-content').innerHTML = `
-                <h2>Projects</h2>
-                <ul>
-                    <li><strong>Predictive Inventory Model:</strong> Optimized inventory worth $18M with predictive analytics.</li>
-                    <li><strong>Django Web App:</strong> Streamlined inventory and production planning.</li>
-                    <li><strong>Brain Tumor Detection:</strong> Achieved 93% accuracy with a deep learning model.</li>
-                </ul>
-            `;
-            document.getElementById('modal').style.display = 'block';
-        });
-
-        document.getElementById('research-btn').addEventListener('click', function() {
-            document.getElementById('modal-content').innerHTML = `
-                <h2>Research</h2>
-                <p>My research spans topics such as:</p>
-                <ul>
-                    <li>Deep Learning in Healthcare</li>
-                    <li>Supply Chain Optimization</li>
-                    <li>Data-Driven Decision Making</li>
-                </ul>
-            `;
-            document.getElementById('modal').style.display = 'block';
-        });
-
-        document.getElementById('resume-btn').addEventListener('click', function() {
-            document.getElementById('modal-content').innerHTML = `
-                <h2>Resume</h2>
-                <p><a href="https://drive.google.com/drive/folders/1okNjob6sAJKSLENzsHD63jILY3QV1uXa?usp=share_link" target="_blank">Download My Resume</a></p>
-            `;
-            document.getElementById('modal').style.display = 'block';
-        });
-
-        document.getElementById('contact-btn').addEventListener('click', function() {
-            document.getElementById('modal-content').innerHTML = `
-                <h2>Contact</h2>
-                <p>Email: <a href="mailto:nkant@umd.edu">nkant@umd.edu</a></p>
-                <p>LinkedIn: <a href="https://www.linkedin.com/in/nikhil-kant/" target="_blank">linkedin.com/in/nikhil-kant</a></p>
-                <p>GitHub: <a href="https://github.com" target="_blank">github.com</a></p>
-            `;
-            document.getElementById('modal').style.display = 'block';
-        });
-    </script>
-</body>
+	</body>
 </html>
