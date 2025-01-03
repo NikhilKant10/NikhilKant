@@ -12,82 +12,86 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
+            background-color: #ffffff;
+            color: #333;
         }
 
         header {
-            background: linear-gradient(90deg, #333, #555);
-            color: #fff;
+            background: #f8f9fa;
+            border-bottom: 1px solid #ddd;
             padding: 1rem 2rem;
             position: sticky;
             top: 0;
             z-index: 1000;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
         }
 
         header h1 {
             margin: 0;
-            font-size: 2rem;
+            font-size: 1.8rem;
+            color: #555;
         }
 
         nav {
-            display: flex;
-            gap: 1rem;
+            margin-top: 1rem;
         }
 
         nav a {
-            color: #fff;
+            color: #333;
             text-decoration: none;
-            padding: 0.5rem 1rem;
-            border-radius: 5px;
-            transition: background 0.3s ease;
+            margin: 0 1rem;
+            font-size: 1.1rem;
+            font-weight: bold;
+            border-bottom: 2px solid transparent;
+            padding-bottom: 0.2rem;
+            transition: border-color 0.3s ease-in-out;
         }
 
         nav a:hover {
-            background: #555;
+            border-color: #333;
         }
 
         section {
-            padding: 2rem;
+            padding: 4rem 2rem;
+            max-width: 800px;
+            margin: 0 auto;
         }
 
-        .intro {
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
             text-align: center;
-        }
-
-        .intro img {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-        }
-
-        .projects {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
         }
 
         .project {
-            background: #fff;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            padding: 1rem;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            transition: transform 0.2s ease-in-out;
+            margin-bottom: 2rem;
         }
 
-        .project:hover {
-            transform: translateY(-5px);
+        .project h3 {
+            font-size: 1.5rem;
+            color: #555;
+        }
+
+        .project p {
+            font-size: 1rem;
+            line-height: 1.5;
         }
 
         footer {
+            background: #f8f9fa;
+            border-top: 1px solid #ddd;
             text-align: center;
-            background: #222;
-            color: #fff;
-            padding: 1rem;
+            padding: 1rem 2rem;
             font-size: 0.9rem;
+            color: #555;
+        }
+
+        footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -95,52 +99,64 @@
     <header>
         <h1>Nikhil Kant</h1>
         <nav>
-            <a href="#about" class="nav-link">About</a>
-            <a href="#projects" class="nav-link">Projects</a>
-            <a href="#contact" class="nav-link">Contact</a>
-            <a href="https://drive.google.com/file/d/1wmHJFG8h_fAU2B-SVFr5buu4kwozxbY9/view?usp=sharing" target="_blank" class="nav-link">Resume</a>
+            <a href="#bio">Bio</a>
+            <a href="#research">Research</a>
+            <a href="#projects">Projects</a>
+            <a href="#cv">CV</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
 
-    <section id="about" class="intro">
-        <img src="profile.jpg" alt="Nikhil Kant">
-        <h2>Welcome!</h2>
-        <p>Hi, I'm Nikhil Kant, a passionate ML Software Engineer and M.S. Information Systems student. I specialize in crafting data-driven solutions that empower businesses and systems.</p>
+    <section id="bio">
+        <h2>Bio</h2>
+        <p>Hi, I'm Nikhil Kant, a passionate ML Software Engineer and M.S. Information Systems student. I specialize in crafting data-driven solutions that empower businesses and systems. My interests include predictive analytics, process optimization, and machine learning for impactful business outcomes.</p>
+    </section>
+
+    <section id="research">
+        <h2>Research</h2>
+        <p>I have worked on various research projects, including:</p>
+        <ul>
+            <li>Brain Tumor Detection using Deep Learning (93% accuracy).</li>
+            <li>Optimization of Supply Chain Processes using predictive modeling.</li>
+            <li>Inventory Management through data-driven simulations.</li>
+        </ul>
     </section>
 
     <section id="projects">
         <h2>Projects</h2>
-        <div class="projects">
-            <div class="project">
-                <h3>Predictive Inventory Model</h3>
-                <p>Reduced lead times by 67% and optimized inventory worth $18 million using predictive analytics.</p>
-            </div>
-            <div class="project">
-                <h3>Django Web App</h3>
-                <p>Developed a full-stack Django application to streamline inventory and production planning.</p>
-            </div>
-            <div class="project">
-                <h3>Brain Tumor Detection</h3>
-                <p>Designed a Deep Learning model with 93% accuracy, published in an international journal.</p>
-            </div>
+        <div class="project">
+            <h3>Predictive Inventory Model</h3>
+            <p>Reduced lead times by 67% and optimized inventory worth $18 million using predictive analytics.</p>
+        </div>
+        <div class="project">
+            <h3>Django Web App</h3>
+            <p>Developed a full-stack Django application to streamline inventory and production planning.</p>
+        </div>
+        <div class="project">
+            <h3>Brain Tumor Detection</h3>
+            <p>Designed a Deep Learning model with 93% accuracy, published in an international journal.</p>
         </div>
     </section>
 
+    <section id="cv">
+        <h2>CV</h2>
+        <p><a href="https://drive.google.com/drive/folders/1okNjob6sAJKSLENzsHD63jILY3QV1uXa?usp=share_link" target="_blank">Download My Resume</a></p>
+    </section>
+
     <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Feel free to reach out!</p>
-        <a href="mailto:nkant@umd.edu"><i class="fas fa-envelope"></i></a>
-        <a href="https://www.linkedin.com/in/nikhil-kant/" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:nkant@umd.edu">nkant@umd.edu</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/nikhil-kant/" target="_blank">linkedin.com/in/nikhil-kant</a></p>
+        <p>GitHub: <a href="https://github.com/" target="_blank">github.com</a></p>
     </section>
 
     <footer>
-        <p>&copy; 2024 Nikhil Kant. All Rights Reserved.</p>
+        <p>&copy; 2024 Nikhil Kant. All Rights Reserved. | <a href="#bio">Back to Top</a></p>
     </footer>
 
     <script>
-        // Initialize Smooth Scroll
-        var scroll = new SmoothScroll('.nav-link[href*="#"]', {
+        // Smooth Scroll Initialization
+        var scroll = new SmoothScroll('nav a[href*="#"]', {
             speed: 800,
             offset: 50
         });
